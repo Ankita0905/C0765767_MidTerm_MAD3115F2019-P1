@@ -14,6 +14,7 @@
 		E081FF3B236B8EFF00A9299D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E081FF3A236B8EFF00A9299D /* Assets.xcassets */; };
 		E081FF3E236B8EFF00A9299D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081FF3C236B8EFF00A9299D /* LaunchScreen.storyboard */; };
 		E081FF46236B900E00A9299D /* ankita.png in Resources */ = {isa = PBXBuildFile; fileRef = E081FF45236B900E00A9299D /* ankita.png */; };
+		E081FF48236B99F400A9299D /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = E081FF47236B99F400A9299D /* Users.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E081FF3D236B8EFF00A9299D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E081FF3F236B8EFF00A9299D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E081FF45236B900E00A9299D /* ankita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ankita.png; sourceTree = "<group>"; };
+		E081FF47236B99F400A9299D /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E081FF3A236B8EFF00A9299D /* Assets.xcassets */,
 				E081FF3C236B8EFF00A9299D /* LaunchScreen.storyboard */,
 				E081FF3F236B8EFF00A9299D /* Info.plist */,
+				E081FF47236B99F400A9299D /* Users.plist */,
 			);
 			path = "C0765767_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			files = (
 				E081FF3E236B8EFF00A9299D /* LaunchScreen.storyboard in Resources */,
 				E081FF46236B900E00A9299D /* ankita.png in Resources */,
+				E081FF48236B99F400A9299D /* Users.plist in Resources */,
 				E081FF3B236B8EFF00A9299D /* Assets.xcassets in Resources */,
 				E081FF39236B8EFB00A9299D /* Main.storyboard in Resources */,
 			);
