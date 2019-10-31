@@ -10,11 +10,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var lblVersion: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       showVersion()
     }
+    
+    func showVersion()
+ {
+    if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"), let versionCode = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")  {
+        
+        lblVersion.text = "V \(version) (\(versionCode))"
+    }
+    
 
+    }
 
 }
 
