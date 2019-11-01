@@ -10,7 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var txtUser: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var lblVersion: UILabel!
+    @IBOutlet weak var btnLogin: UIButton!
+    
+    @IBAction func btnLogin(_ sender: UIButton) {
+        let sb=UIStoryboard(name: "Main", bundle: nil)
+        let customerListVC=sb.instantiateViewController(identifier: "customerListVC") as! CustomerListViewController
+        navigationController?.pushViewController(customerListVC, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
        showVersion()
@@ -20,7 +29,7 @@ class LoginViewController: UIViewController {
  {
     if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"), let versionCode = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")  {
         
-        lblVersion.text = "V \(version) (\(versionCode))"
+        lblVersion.text = "Version \(version) (\(versionCode))"
     }
     
 
