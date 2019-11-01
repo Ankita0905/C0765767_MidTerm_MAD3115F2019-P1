@@ -24,9 +24,6 @@ class LoginViewController: UIViewController {
     
     @IBAction func btnLogin(_ sender: UIButton) {
         
-        
-        
-       
         if readInformationPlist()
                 {
                     let sb=UIStoryboard(name: "Main", bundle: nil)
