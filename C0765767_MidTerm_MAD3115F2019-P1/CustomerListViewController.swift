@@ -10,6 +10,8 @@ import UIKit
 
 class CustomerListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    var temp=Singleton.getObject()
+    
     @IBOutlet weak var customerListTable: UITableView!
     
     override func viewDidLoad() {
