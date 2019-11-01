@@ -10,5 +10,14 @@ import Foundation
 
 class Singleton:NSObject
 {
+    private var custDict=[Int:Customer]()
+    private static var s1=Singleton()
+    private override init() {
+         
+    }
+   internal static func getObject()->Singleton{
+        return s1
+    }
+    
     
 }
