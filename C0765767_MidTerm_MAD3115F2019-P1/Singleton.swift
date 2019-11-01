@@ -6,6 +6,9 @@
 //  Copyright © 2019 Ankita Jain. All rights reserved.
 //
 
+//understood from Kuldeep
+
+
 import Foundation
 
 class Singleton: NSObject
