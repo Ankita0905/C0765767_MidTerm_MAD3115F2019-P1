@@ -129,6 +129,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tVD-pt-65Q"/>
                     </view>
+                    <connections>
+                        <outlet property="customerListTable" destination="gaW-RW-7TN" id="2uT-MI-Ds6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rdq-ap-4N0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
