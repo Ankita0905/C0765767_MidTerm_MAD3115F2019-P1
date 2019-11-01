@@ -38,6 +38,12 @@ class Singleton:NSObject
         let c2=Customer(cId: 102, cFname: "Honey", cLname: "Singh", cEmail: "honey@123")
     }
     
-   
+   func display()
+      {
+          for i in custDict.values
+          {
+              print(i.fullName)
+          }
+      }
     
 }
