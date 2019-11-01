@@ -19,5 +19,10 @@ class Singleton:NSObject
         return s1
     }
     
+    func addNewCustomer(FirstName:String,LastName:String,EmailId:String)
+    {
+        let cust1=custDict.count+1
+        let add=Customer(cId: cust1, cFname: FirstName, cLname: LastName, cEmail: EmailId)
     
+    }
 }
