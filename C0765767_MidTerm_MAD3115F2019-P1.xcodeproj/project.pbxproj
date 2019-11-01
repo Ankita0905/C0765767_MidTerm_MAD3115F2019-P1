@@ -19,6 +19,7 @@
 		E081FF6E236BC54100A9299D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF6D236BC54100A9299D /* Singleton.swift */; };
 		E081FF70236BE8AE00A9299D /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF6F236BE8AE00A9299D /* Customer.swift */; };
 		E081FF72236C130100A9299D /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF71236C130100A9299D /* AddCustomerViewController.swift */; };
+		E081FF74236CBD5600A9299D /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF73236CBD5600A9299D /* CustomerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E081FF6D236BC54100A9299D /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E081FF6F236BE8AE00A9299D /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		E081FF71236C130100A9299D /* AddCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
+		E081FF73236CBD5600A9299D /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E081FF6D236BC54100A9299D /* Singleton.swift */,
 				E081FF6F236BE8AE00A9299D /* Customer.swift */,
 				E081FF71236C130100A9299D /* AddCustomerViewController.swift */,
+				E081FF73236CBD5600A9299D /* CustomerDetailsViewController.swift */,
 			);
 			path = "C0765767_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				E081FF36236B8EFB00A9299D /* LoginViewController.swift in Sources */,
 				E081FF32236B8EFB00A9299D /* AppDelegate.swift in Sources */,
 				E081FF70236BE8AE00A9299D /* Customer.swift in Sources */,
+				E081FF74236CBD5600A9299D /* CustomerDetailsViewController.swift in Sources */,
 				E081FF6E236BC54100A9299D /* Singleton.swift in Sources */,
 				E081FF34236B8EFB00A9299D /* SceneDelegate.swift in Sources */,
 			);
