@@ -19,4 +19,13 @@ class Customer
     }
     var email:String?
     var totalAmount:Float?
+
+
+init(cId:Int,cFname:String,cLname:String,cEmail:String)
+{
+    self.customerId=cId
+    self.firstName=cFname
+    self.lastName=cLname
+    self.email=cEmail
+}
 }
