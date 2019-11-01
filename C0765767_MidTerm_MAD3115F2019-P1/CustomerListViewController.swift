@@ -10,6 +10,20 @@ import UIKit
 
 class CustomerListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    private func addLogoutButton()
+    {
+        let btnLogout=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListViewController.logout(sender:)))
+        
+        navigationItem.rightBarButtonItem=btnLogout
+    }
+    
+    @objc
+    func logout(sender: UIBarButtonItem)
+    {
+        print("logout")
+        navigationController?.popViewController(animated: true)
+    }
+    
   var tempvar = Singleton.getInstance()
     
     @IBOutlet weak var customerListTable: UITableView!
@@ -20,22 +34,9 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
         customerListTable.delegate=self
         customerListTable.dataSource=self
       navigationItem.hidesBackButton=true
+         addLogoutButton()
     }
     
-    
-//    private func allLogOutButton()
-//            {
-//                let btnLogOut = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(customerListTable.))
-//            navigationItem.leftBarButtonItem = btnLogOut
-//                navigationItem.leftBarButtonItems = [btnLogOut]
-//
-//            }
-//
-//        @objc func logout(sender: UIBarButtonItem)
-//           {
-//                           navigationController?.popViewController(animated: true)
-//
-//           }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
