@@ -207,14 +207,24 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="L3V-OZ-LbE"/>
+                                    <navigationItem title="Title" id="L3V-OZ-LbE">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="Ddi-zf-Dzl">
+                                            <connections>
+                                                <action selector="btnsave:" destination="qbI-ua-U29" id="XNM-57-msY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="V8b-OQ-dvx"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="WF6-30-iQg"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="652-hp-XXX"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="txtEmail" destination="ly3-qg-BQs" id="x6W-xB-iFg"/>
                         <outlet property="txtFirstName" destination="VfQ-bG-YyK" id="m39-K8-C7k"/>

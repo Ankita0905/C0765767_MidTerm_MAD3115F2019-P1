@@ -15,6 +15,10 @@ class AddCustomerViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     
     
+    @IBAction func btnsave(_ sender: UIBarButtonItem) {
+        let fName = txtFirstName.text
+        let lName = txtLastName.text
+    }
     
     
     override func viewDidLoad() {
@@ -23,7 +27,15 @@ class AddCustomerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // Code taken from https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
+    
+    func isValidEmail() -> Bool {
+           let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
+           let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+           return emailPred.evaluate(with: txtEmail.text!)
+    }
+    
     /*
     // MARK: - Navigation
 
