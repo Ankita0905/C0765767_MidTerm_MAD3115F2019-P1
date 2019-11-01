@@ -27,7 +27,7 @@ class Singleton: NSObject
     func addNewCustomer(First_Name : String, Last_Name : String, email : String)
     {
         let c = customerDictionary.count + 1
-        //let c1 = "c" + String(customerDictionary.count)
+        
         let temp = Customer(customerID: c, customerFName: First_Name, customerLName: Last_Name, customerEmail: email)
         self.AddCustomer(customer: temp)
     }
@@ -52,14 +52,14 @@ class Singleton: NSObject
     
     func createCust()
     {
-    let customer1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
-        AddCustomer(customer: customer1)
-        let customer2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
-        AddCustomer(customer: customer2)
-        let customer3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
-        AddCustomer(customer: customer3)
-        let customer4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
-        AddCustomer(customer: customer4)
+    let c1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
+        AddCustomer(customer: c1)
+        let c2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
+        AddCustomer(customer: c2)
+        let c3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
+        AddCustomer(customer: c3)
+        let c4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
+        AddCustomer(customer: c4)
        
     }
     
