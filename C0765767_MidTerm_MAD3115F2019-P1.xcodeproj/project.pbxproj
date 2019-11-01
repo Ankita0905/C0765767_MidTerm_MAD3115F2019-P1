@@ -16,6 +16,8 @@
 		E081FF46236B900E00A9299D /* ankita.png in Resources */ = {isa = PBXBuildFile; fileRef = E081FF45236B900E00A9299D /* ankita.png */; };
 		E081FF48236B99F400A9299D /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = E081FF47236B99F400A9299D /* Users.plist */; };
 		E081FF6C236BB43300A9299D /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF6B236BB43300A9299D /* CustomerListViewController.swift */; };
+		E081FF6E236BC54100A9299D /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF6D236BC54100A9299D /* Singleton.swift */; };
+		E081FF70236BE8AE00A9299D /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF6F236BE8AE00A9299D /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E081FF45236B900E00A9299D /* ankita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ankita.png; sourceTree = "<group>"; };
 		E081FF47236B99F400A9299D /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		E081FF6B236BB43300A9299D /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		E081FF6D236BC54100A9299D /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		E081FF6F236BE8AE00A9299D /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				E081FF3F236B8EFF00A9299D /* Info.plist */,
 				E081FF47236B99F400A9299D /* Users.plist */,
 				E081FF6B236BB43300A9299D /* CustomerListViewController.swift */,
+				E081FF6D236BC54100A9299D /* Singleton.swift */,
+				E081FF6F236BE8AE00A9299D /* Customer.swift */,
 			);
 			path = "C0765767_MidTerm_MAD3115F2019-P1";
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				E081FF6C236BB43300A9299D /* CustomerListViewController.swift in Sources */,
 				E081FF36236B8EFB00A9299D /* LoginViewController.swift in Sources */,
 				E081FF32236B8EFB00A9299D /* AppDelegate.swift in Sources */,
+				E081FF70236BE8AE00A9299D /* Customer.swift in Sources */,
+				E081FF6E236BC54100A9299D /* Singleton.swift in Sources */,
 				E081FF34236B8EFB00A9299D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
