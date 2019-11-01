@@ -119,13 +119,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Customers" id="yXg-CE-tif">
-                                        <barButtonItem key="rightBarButtonItem" title="ADD" id="7lD-3t-MAj">
-                                            <connections>
-                                                <segue destination="qbI-ua-U29" kind="show" id="waE-8F-cB6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Customers" id="yXg-CE-tif"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-RW-7TN">
@@ -158,9 +152,9 @@
         <!--Add Customer View Controller-->
         <scene sceneID="5wR-3h-Op8">
             <objects>
-                <viewController id="qbI-ua-U29" customClass="AddCustomerViewController" customModule="C0765767_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addCustomerVC" id="qbI-ua-U29" customClass="AddCustomerViewController" customModule="C0765767_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bmV-Q1-mjR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biH-y8-3U8">
