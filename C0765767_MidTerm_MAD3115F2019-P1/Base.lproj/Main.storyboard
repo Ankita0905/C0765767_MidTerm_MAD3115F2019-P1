@@ -215,6 +215,11 @@
                         <viewLayoutGuide key="safeArea" id="V8b-OQ-dvx"/>
                     </view>
                     <navigationItem key="navigationItem" id="652-hp-XXX"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="ly3-qg-BQs" id="x6W-xB-iFg"/>
+                        <outlet property="txtFirstName" destination="VfQ-bG-YyK" id="m39-K8-C7k"/>
+                        <outlet property="txtLastName" destination="q7H-hs-3cV" id="ery-x4-lJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXw-aB-uw7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
