@@ -28,8 +28,16 @@ class Singleton:NSObject
     {
         let cust1=custDict.count+1
         let add=Customer(cId: cust1, cFname: FirstName, cLname: LastName, cEmail: EmailId)
-    
+        self.addCustomer(customer: add)
     }
     
+    func createCustome()
+    {
+        let c1=Customer(cId: 101, cFname: "Ankita", cLname: "Jain", cEmail: "ankita@123")
+        addCustomer(customer: c1)
+        let c2=Customer(cId: 102, cFname: "Honey", cLname: "Singh", cEmail: "honey@123")
+    }
+    
+   
     
 }
