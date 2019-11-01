@@ -14,7 +14,7 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
     {
         let btnLogout=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListViewController.logout(sender:)))
         
-        navigationItem.rightBarButtonItem=btnLogout
+        navigationItem.leftBarButtonItem=btnLogout
     }
     
     @objc
