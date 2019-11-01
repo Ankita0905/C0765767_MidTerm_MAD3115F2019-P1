@@ -244,7 +244,7 @@
         <!--Customer Details View Controller-->
         <scene sceneID="POp-xc-C63">
             <objects>
-                <viewController id="WgY-iR-6pR" customClass="CustomerDetailsViewController" customModule="C0765767_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailsVC" id="WgY-iR-6pR" customClass="CustomerDetailsViewController" customModule="C0765767_MidTerm_MAD3115F2019_P1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZpI-Ic-ur4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +261,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fev-Dg-bks"/>
                     </view>
+                    <connections>
+                        <outlet property="lblDetails" destination="9Wr-Zp-of4" id="bgD-av-xJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olq-kg-xyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

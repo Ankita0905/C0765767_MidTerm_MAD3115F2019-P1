@@ -9,10 +9,11 @@
 import UIKit
 
 class CustomerDetailsViewController: UIViewController {
-
+    var cutdetails:Customer?=nil
+    @IBOutlet weak var lblDetails: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblDetails.text = cutdetails?.fullName
         // Do any additional setup after loading the view.
     }
     

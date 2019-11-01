@@ -31,7 +31,7 @@ class AddCustomerViewController: UIViewController {
         //print("Customer Added")
      let sb1=UIStoryboard(name: "Main", bundle: nil)
      let customerListVC=sb1.instantiateViewController(identifier: "customerListVC") as! CustomerListViewController
-     navigationController?.pushViewController(customerListVC, animated: true)
+        navigationController?.popViewController(animated: true)
 
     
     

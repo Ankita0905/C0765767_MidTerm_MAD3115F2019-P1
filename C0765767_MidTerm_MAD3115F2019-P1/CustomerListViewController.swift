@@ -54,6 +54,12 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
         addCustomerButton()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let sb1=UIStoryboard(name: "Main", bundle: nil)
+               let detailsVC=sb1.instantiateViewController(identifier: "detailsVC") as! CustomerDetailsViewController
+        detailsVC.cutdetails=tempvar.returnCustObject(custID: indexPath.row+1)!
+               navigationController?.pushViewController(detailsVC, animated: true)
+    }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
