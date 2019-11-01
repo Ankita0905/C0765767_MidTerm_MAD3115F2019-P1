@@ -10,9 +10,10 @@ import UIKit
 
 class CustomerListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var temp=Singleton.getObject()
+  var tempvar = Singleton.getInstance()
     
     @IBOutlet weak var customerListTable: UITableView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +22,45 @@ class CustomerListViewController: UIViewController,UITableViewDelegate,UITableVi
       navigationItem.hidesBackButton=true
     }
     
+    
+//    private func allLogOutButton()
+//            {
+//                let btnLogOut = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(customerListTable.))
+//            navigationItem.leftBarButtonItem = btnLogOut
+//                navigationItem.leftBarButtonItems = [btnLogOut]
+//
+//            }
+//
+//        @objc func logout(sender: UIBarButtonItem)
+//           {
+//                           navigationController?.popViewController(animated: true)
+//
+//           }
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+         return tempvar.returnCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+       let x = tempvar.returnCustObject(custID: Int(indexPath.row+1))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
+        cell.textLabel?.text = x?.fullName
+         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "List of Customers"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+           customerListTable.reloadData()
+           
+       }
     
 
     

@@ -10,22 +10,20 @@ import Foundation
 
 class Customer
 {
-    var customerId:Int?
-    var firstName:String?
-    var lastName:String?
-    var fullName:String
-    {
-        return firstName! + " " + lastName!
+    var customerID : Int?
+    var customerFName: String?
+    var customerLName : String?
+    var fullName : String{
+        return customerFName! + " " + customerLName!
     }
-    var email:String?
-    var totalAmount:Float?
-
-
-init(cId:Int,cFname:String,cLname:String,cEmail:String)
-{
-    self.customerId=cId
-    self.firstName=cFname
-    self.lastName=cLname
-    self.email=cEmail
-}
+      var customerEmail: String?
+    
+    var totalBillAmount : Float?
+    
+    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
+        self.customerID=customerID
+        self.customerFName=customerFName
+        self.customerLName=customerLName
+        self.customerEmail=customerEmail
+    }
 }

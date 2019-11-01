@@ -8,62 +8,73 @@
 
 import Foundation
 
-class Singleton:NSObject
+class Singleton: NSObject
 {
-    private var custDict=[Int:Customer]()
-    private static var s1=Singleton()
+     private var customerDictionary  = [Int:Customer]()
+    
+    private static var obj = Singleton()
+    
+    
     private override init() {
-         
-    }
-   internal static func getObject()->Singleton{
-        return s1
+        
     }
     
-    func addCustomer(customer: Customer)
+    internal static func getInstance() -> Singleton
     {
-        custDict.updateValue(customer, forKey: customer.customerId!)
+        return obj
     }
     
-    func addNewCustomer(FirstName:String,LastName:String,EmailId:String)
+    func addNewCustomer(First_Name : String, Last_Name : String, email : String)
     {
-        let cust1=custDict.count+1
-        let add=Customer(cId: cust1, cFname: FirstName, cLname: LastName, cEmail: EmailId)
-        self.addCustomer(customer: add)
+        let c = customerDictionary.count + 1
+        //let c1 = "c" + String(customerDictionary.count)
+        let temp = Customer(customerID: c, customerFName: First_Name, customerLName: Last_Name, customerEmail: email)
+        self.AddCustomer(customer: temp)
     }
     
-    func createCustome()
+    func returnCustObject(custID : Int) -> Customer?
     {
-        let c1=Customer(cId: 101, cFname: "Ankita", cLname: "Jain", cEmail: "ankita@123")
-        addCustomer(customer: c1)
-        let c2=Customer(cId: 102, cFname: "Honey", cLname: "Singh", cEmail: "honey@123")
-    }
-    
-    func countreturn()->Int
-    {
-        return custDict.count
-    }
-    
-    func returnCustomerObject(cusomerId:Int)->Customer?
-    {
-        for (k,v) in custDict
+        for (k,v) in customerDictionary
         {
-            if cusomerId==k
+            if custID == k
             {
                 return v
             }
-            
         }
         return nil
+        
+    }
+    
+    func returnCount() -> Int
+    {
+        return customerDictionary.count
+    }
+    
+    func createCust()
+    {
+    let customer1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
+        AddCustomer(customer: customer1)
+        let customer2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
+        AddCustomer(customer: customer2)
+        let customer3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
+        AddCustomer(customer: customer3)
+        let customer4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
+        AddCustomer(customer: customer4)
+       
     }
     
     
-   func display()
-      {
-          for i in custDict.values
-          {
-              print(i.fullName)
-          }
-      }
+
     
-    
+    func AddCustomer(customer: Customer)
+    {
+        customerDictionary.updateValue(customer, forKey: customer.customerID!)
+    }
+    func printdata()
+    {
+        for i in customerDictionary.values
+        {
+            print(i.customerFName!)
+        }
+    }
 }
