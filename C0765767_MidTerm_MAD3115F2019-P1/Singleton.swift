@@ -57,8 +57,9 @@ class Singleton: NSObject
          {
             
             //cust 1
-            let i1=Internet(providerName: "ABC", gbUsed: 23.9, billId: "I1", billDate: "01/01/2019", billAmount: 100.9, billType:Bill.Types.Internet)
-            
+            let i1=Internet(providerName: "Bell", gbUsed: 23.9, billId: "I1", billDate: "01/01/2019", billAmount: 100.9, billType:Bill.Types.Internet)
+            let h1=Hydro(agencyName: "Brampton Energy", unitsConsumed: 22.2, billAmount: 101.21, billId: "H1", billType: Bill.Types.Hydro, billDate: "01/02/2019")
+            let m1=Mobile(manufacturerName: "Apple", planName: "Big Data", mobileNumber: "67854334", internetUsed: 10.2, minutesUsed: 500, billAmount: 90.56, billId: "M1", billType: Bill.Types.Mobile, billDate: "01/03/2019")
          let c1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
              AddCustomer(customer: c1)
              let c2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
@@ -72,7 +73,8 @@ class Singleton: NSObject
              AddCustomer(customer: c4)
              
             c1.addBill(Bill: i1)
-            
+            c1.addBill(Bill: h1)
+            c1.addBill(Bill: m1)
          }
          
          
