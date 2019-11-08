@@ -13,16 +13,43 @@ class CustomerDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     var cutdetails:Customer?=nil
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return cutdetails!.bills.count
+         return (cutdetails?.billDictionary.count)!
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let x = cutdetails.returnCustObject(custID: Int(indexPath.row+1))
-        let Cell=tableView.dequeueReusableCell(withIdentifier: "Mycell",for:indexPath)
+        let cell=tableView.dequeueReusableCell(withIdentifier: "Mycell",for:indexPath)
+        let tempArray = cutdetails!.returnBillArray()
+        
+       //let tempBillType = tempArray[indexPath.section].billType.rawValue
+//
+//        if tempBillType.elementsEqual("Mobile")
+//        {
+//            let tempObj =  tempArray[indexPath.row] as! Mobile
+//            cell.billType.text = tempBillType
+//            cell.billDate.text = tempObj.billDate
+//            cell.billAmount.text = String(tempObj.totalBillAmount)
+//        }
+//        if tempBillType.elementsEqual("Internet")
+//        {
+//            let tempObj =  tempArray[indexPath.row] as! Internet
+//            cell.billType.text = tempBillType
+//            cell.billDate.text = tempObj.billDate
+//            cell.billAmount.text = String(tempObj.totalBillAmount)
+//        }
+//        if tempBillType.elementsEqual("Hydro")
+//        {
+//            let tempObj =  tempArray[indexPath.row] as! Hydro
+//            cell.billType.text = tempBillType
+//            cell.billDate.text = tempObj.billDate
+//            cell.billAmount.text = String(tempObj.totalBillAmount)
+//        }
+//
+        //cell.billType.text =  tempArray[indexPath.row].billType.rawValue
+        return cell
         
         
-        return Cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
