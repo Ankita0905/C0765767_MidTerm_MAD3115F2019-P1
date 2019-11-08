@@ -23,6 +23,7 @@
 		E0E40234237537DA00CF19D0 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E40233237537D900CF19D0 /* Bill.swift */; };
 		E0E402362375381D00CF19D0 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E402352375381D00CF19D0 /* Hydro.swift */; };
 		E0E402382375385500CF19D0 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E402372375385500CF19D0 /* Internet.swift */; };
+		E0E4023A2375387E00CF19D0 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E402392375387E00CF19D0 /* Mobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E0E40233237537D900CF19D0 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		E0E402352375381D00CF19D0 /* Hydro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		E0E402372375385500CF19D0 /* Internet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		E0E402392375387E00CF19D0 /* Mobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E0E40233237537D900CF19D0 /* Bill.swift */,
 				E0E402372375385500CF19D0 /* Internet.swift */,
 				E0E402352375381D00CF19D0 /* Hydro.swift */,
+				E0E402392375387E00CF19D0 /* Mobile.swift */,
 			);
 			path = Bill;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				E0E402362375381D00CF19D0 /* Hydro.swift in Sources */,
 				E081FF6C236BB43300A9299D /* CustomerListViewController.swift in Sources */,
 				E081FF72236C130100A9299D /* AddCustomerViewController.swift in Sources */,
+				E0E4023A2375387E00CF19D0 /* Mobile.swift in Sources */,
 				E081FF36236B8EFB00A9299D /* LoginViewController.swift in Sources */,
 				E081FF32236B8EFB00A9299D /* AppDelegate.swift in Sources */,
 				E0E402382375385500CF19D0 /* Internet.swift in Sources */,
