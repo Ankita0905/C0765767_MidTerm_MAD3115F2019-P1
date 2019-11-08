@@ -19,11 +19,20 @@ class Customer
       var customerEmail: String?
     
     var totalBillAmount : Float?
-    
+    var billDictionary = Dictionary<String,Bill>()
     init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
         self.customerID=customerID
         self.customerFName=customerFName
         self.customerLName=customerLName
         self.customerEmail=customerEmail
+        
+    }
+    
+    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String,billDict:Dictionary<String,Bill>) {
+        self.customerID=customerID
+        self.customerFName=customerFName
+        self.customerLName=customerLName
+        self.customerEmail=customerEmail
+        self.billDictionary=billDict
     }
 }
