@@ -19,7 +19,16 @@ class Customer
       var customerEmail: String?
     
     var totalBillAmount : Float?
-    var billDictionary = Dictionary<String,Bill>()
+    //var billDictionary = Dictionary<String,Bill>()
+//    internal var bills = [Bill]()
+//
+//    var getBills: [Bill] {
+//        get {
+//            return bills
+//        }
+//    }
+    var billDictionary=[String:Bill]()
+    
     init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
         self.customerID=customerID
         self.customerFName=customerFName
@@ -28,11 +37,28 @@ class Customer
         
     }
     
-    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String,billDict:Dictionary<String,Bill>) {
-        self.customerID=customerID
-        self.customerFName=customerFName
-        self.customerLName=customerLName
-        self.customerEmail=customerEmail
-        self.billDictionary=billDict
+    func addBill(Bill:Bill)
+    {
+        billDictionary.updateValue(Bill, forKey:Bill.billId)
     }
-}
+    
+    func returnBillArray() -> Array<Bill>
+    {
+        var temp : Array<Bill> = []
+        for i in billDictionary.values
+        {
+            temp.append(i)
+        }
+        return temp
+    }
+    
+//    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String,bills: [Bill]? = nil) {
+//        self.customerID=customerID
+//        self.customerFName=customerFName
+//        self.customerLName=customerLName
+//        self.customerEmail=customerEmail
+//        if let bill = bills {
+//           self.bills = bill
+//        }
+    }
+

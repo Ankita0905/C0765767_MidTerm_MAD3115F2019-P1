@@ -13,13 +13,14 @@ class CustomerDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     var cutdetails:Customer?=nil
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return cutdetails!.billDictionary.count
+        return cutdetails!.bills.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let x = cutdetails.returnCustObject(custID: Int(indexPath.row+1))
         let Cell=tableView.dequeueReusableCell(withIdentifier: "Mycell",for:indexPath)
+        
         
         return Cell
     }
@@ -38,6 +39,7 @@ class CustomerDetailsViewController: UIViewController,UITableViewDelegate,UITabl
         super.viewDidLoad()
         lblDetails.text = cutdetails?.fullName
         lbldetails2.text = cutdetails?.customerEmail
+        
         // Do any additional setup after loading the view.
     }
     

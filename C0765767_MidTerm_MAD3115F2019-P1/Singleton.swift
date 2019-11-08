@@ -55,6 +55,10 @@ class Singleton: NSObject
          
          func createCust()
          {
+            
+            //cust 1
+            let i1=Internet(providerName: "ABC", gbUsed: 23.9, billId: "I1", billDate: "01/01/2019", billAmount: 100.9, billType:Bill.Types.Internet)
+            
          let c1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
              AddCustomer(customer: c1)
              let c2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
@@ -62,12 +66,12 @@ class Singleton: NSObject
              let c3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
              AddCustomer(customer: c3)
              //cust 4 with bill
-             let i1=Internet(providerName: "ABC", gbUsed: 23.9, billId: "I1", billDate: "01/01/2019", billAmount: 100.9, billType:Bill.Types.Internet)
              
-             let c4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ",billDict:[i1.billId:i1])
+             
+             let c4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
              AddCustomer(customer: c4)
              
-             
+            c1.addBill(Bill: i1)
             
          }
          
