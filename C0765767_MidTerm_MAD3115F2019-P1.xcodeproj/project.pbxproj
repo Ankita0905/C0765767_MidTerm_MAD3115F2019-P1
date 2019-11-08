@@ -22,6 +22,7 @@
 		E081FF74236CBD5600A9299D /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081FF73236CBD5600A9299D /* CustomerDetailsViewController.swift */; };
 		E0E40234237537DA00CF19D0 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E40233237537D900CF19D0 /* Bill.swift */; };
 		E0E402362375381D00CF19D0 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E402352375381D00CF19D0 /* Hydro.swift */; };
+		E0E402382375385500CF19D0 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E402372375385500CF19D0 /* Internet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E081FF73236CBD5600A9299D /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
 		E0E40233237537D900CF19D0 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		E0E402352375381D00CF19D0 /* Hydro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		E0E402372375385500CF19D0 /* Internet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E0E40233237537D900CF19D0 /* Bill.swift */,
+				E0E402372375385500CF19D0 /* Internet.swift */,
 				E0E402352375381D00CF19D0 /* Hydro.swift */,
 			);
 			path = Bill;
@@ -180,6 +183,7 @@
 				E081FF72236C130100A9299D /* AddCustomerViewController.swift in Sources */,
 				E081FF36236B8EFB00A9299D /* LoginViewController.swift in Sources */,
 				E081FF32236B8EFB00A9299D /* AppDelegate.swift in Sources */,
+				E0E402382375385500CF19D0 /* Internet.swift in Sources */,
 				E081FF70236BE8AE00A9299D /* Customer.swift in Sources */,
 				E081FF74236CBD5600A9299D /* CustomerDetailsViewController.swift in Sources */,
 				E081FF6E236BC54100A9299D /* Singleton.swift in Sources */,
