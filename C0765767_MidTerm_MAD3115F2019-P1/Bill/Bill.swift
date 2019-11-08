@@ -7,21 +7,32 @@
 //
 
 import Foundation
+enum billTypes: String {
+    case Mobile = "Mobile"
+    case Internet = "Internet"
+    case Hydro = "Hydro"
+}
+
 class Bill
 {
-    var billId : String
-    var billDate :  String
-    enum Types {
-        case Internet
-        case Hydro
-        case Mobile
-    }
-    var billType : Types
-    var totalBillAmount : Float = 0
+    var Id: Int
+    var billDate: Date
+    var billType: billTypes
+    var totalBillAmount: Float
     
-    init(billId : String , billDate : String, billType : Types) {
-        self.billId = billId
+    init()
+    {
+        self.Id = Int()
+        self.billDate = Date()
+        self.billType = billTypes.Mobile
+        self.totalBillAmount = Float()
+    }
+    
+    init(Id: Int, billDate: Date, billType: billTypes, totalBillAmount: Float)
+    {
+        self.Id = Id
         self.billDate = billDate
         self.billType = billType
-}
+        self.totalBillAmount = totalBillAmount
+    }
 }

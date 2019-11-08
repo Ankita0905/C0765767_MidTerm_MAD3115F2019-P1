@@ -10,55 +10,41 @@ import Foundation
 
 class Customer
 {
-    var customerID : Int?
-    var customerFName: String?
-    var customerLName : String?
-    var fullName : String{
-        return customerFName! + " " + customerLName!
+    static var activeCustomer = Customer()
+    var customerId : String
+    var firstName : String
+    var lastName: String
+    
+    var fullName: String // computed variable
+    {
+        return "\(self.firstName) \(self.lastName)"
     }
-      var customerEmail: String?
+    var email: String
     
-    var totalBillAmount : Float?
-    //var billDictionary = Dictionary<String,Bill>()
-//    internal var bills = [Bill]()
-//
-//    var getBills: [Bill] {
-//        get {
-//            return bills
-//        }
-//    }
-    var billDictionary=[String:Bill]()
+    var billDictionary = [Int:Bill]()
     
-    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String) {
-        self.customerID=customerID
-        self.customerFName=customerFName
-        self.customerLName=customerLName
-        self.customerEmail=customerEmail
+    var TotalAmountToPay: Float // computed variable
+    {
+        var TotalAmount: Float = 0.0
         
-    }
-    
-    func addBill(Bill:Bill)
-    {
-        billDictionary.updateValue(Bill, forKey:Bill.billId)
-    }
-    
-    func returnBillArray() -> Array<Bill>
-    {
-        var temp : Array<Bill> = []
-        for i in billDictionary.values
+        for bill in billDictionary
         {
-            temp.append(i)
+            TotalAmount = TotalAmount + bill.value.totalBillAmount
         }
-        return temp
+        return TotalAmount
     }
-    
-//    init(customerID:Int,customerFName: String,customerLName:String,customerEmail:String,bills: [Bill]? = nil) {
-//        self.customerID=customerID
-//        self.customerFName=customerFName
-//        self.customerLName=customerLName
-//        self.customerEmail=customerEmail
-//        if let bill = bills {
-//           self.bills = bill
-//        }
+    init(){
+        self.customerId = String()
+        self.firstName = String()
+        self.lastName = String()
+        self.email = String()
     }
+    init(customerId: String, firstName: String, lastName: String, email: String)
+    {
+        self.customerId = customerId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+    }
+}
 
